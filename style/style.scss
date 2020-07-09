@@ -1,0 +1,86 @@
+// variables
+$font-monserrat: 'Montserrat', sans-serif;
+$heading: 3.8rem;
+
+// universalSetup
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: $font-monserrat;
+
+}
+
+
+@media (max-width:1000px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media (max-width: 600px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+// backgroundImage
+.body {
+    background: url(../Images/header.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__heading {
+
+        max-width: 80%;
+        margin: auto;
+        text-align: center;
+        h1 {
+            color: #ffffff;
+            font-size: $heading;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+            word-spacing: 1px;
+            letter-spacing: 1.5px;
+            
+        }
+
+        div {
+            height: 3px;
+            width: 3rem;
+            background-color: #f05f44;
+            display: block;
+            margin: auto;
+
+        }
+    }
+
+    &__btn,
+    &__btn:link {
+        padding: 1.2rem 2rem;
+        font-size: 1.8rem;
+        border-radius: 5rem;
+        cursor: pointer;
+        background-color: #f05f44;
+        border: 1px solid #f05f44;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-top: 2rem;
+        transition: .2s background-color;
+       
+    }
+
+
+    &__btn:hover {
+        background-color: #e74c3c;
+        border-color:  #e74c3c;
+    }
+
+}

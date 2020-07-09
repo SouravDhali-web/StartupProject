@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+.body {
+  background: url(../Images/header.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body__heading {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.body__heading h1 {
+  color: #ffffff;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  word-spacing: 1px;
+  letter-spacing: 1.5px;
+}
+
+.body__heading div {
+  height: 3px;
+  width: 3rem;
+  background-color: #f05f44;
+  display: block;
+  margin: auto;
+}
+
+.body__btn, .body__btn:link {
+  padding: 1.2rem 2rem;
+  font-size: 1.8rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  background-color: #f05f44;
+  border: 1px solid #f05f44;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  -webkit-transition: .2s background-color;
+  transition: .2s background-color;
+}
+
+.body__btn:hover {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+/*# sourceMappingURL=style.css.map */
